@@ -34,7 +34,7 @@ bash train.sh
 
 
 
-### Step2: Finetune the model on default scanner parameter.
+### Step2: Fine-tune the model on images scanned by default scanner parameters.
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0,1,2,3
@@ -66,7 +66,7 @@ bash finetune.sh
 
 
 
-### Step3: Test model's robustness on multi scanner parameters using our indicators.
+### Step3: Test the robustness of the model under multiple scanner parameters using proposed indicators.
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0,1,2,3
