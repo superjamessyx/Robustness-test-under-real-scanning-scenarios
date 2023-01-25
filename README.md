@@ -90,10 +90,9 @@ do
 done
 ```
 
-Then, run 
+This code will save the test results of the model under different scanner parameters, then you can use the following code to calculate the robustness results of the model, which will give you latex format results as well as excel format results.
 
 ```bash
 python ./performance_eval/show_robustness_results.py
 ```
 
-to generate final robustness results, the code will give you latex-formed results and excel-formed results.
