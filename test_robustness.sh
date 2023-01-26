@@ -8,11 +8,8 @@ do
   export CUDA_VISIBLE_DEVICES=1
   port=6283
   OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=1 --master_port $port test_robustness.py \
-    --accum_iter 1 \
     --batch_size 128 \
     --model $model \
-    --epochs 100 \
-    --blr 5e-4 \
     --resume './output_finetuned/'$model'/'$fold'/checkpoint_best.pth' \
     --eval \
     --fold $fold \
