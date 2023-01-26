@@ -101,4 +101,3 @@ This code will save the test results of the model under different scanner parame
 python ./performance_eval/show_robustness_results.py
 ```
 
-Detailed comments to the core code will be updated soon!
